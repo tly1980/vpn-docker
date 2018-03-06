@@ -1,7 +1,7 @@
-FROM alpine:3.6
+FROM alpine:edge
 LABEL maintainer "Tom Tang - https://github.com/tly1980"
 ENTRYPOINT ["/entrypoint.sh"]
-EXPOSE 22 8888
+EXPOSE 22
 COPY rootfs /
 
 RUN /install.sh
