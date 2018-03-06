@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  sshd:
+    image: tt_vpn:f79a78d
+    ports:
+      - 22
+    volumes:
+      - ./nocommit/root:/root
