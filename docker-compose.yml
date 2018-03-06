@@ -2,7 +2,8 @@ version: '3.4'
 
 services:
   sshd:
-    image: tt_vpn:f79a78d
+    image: tt_vpn:1.0
+    privileged: true
     ports:
       - 22
     volumes:
